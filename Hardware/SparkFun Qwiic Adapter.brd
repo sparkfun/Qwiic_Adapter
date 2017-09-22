@@ -175,6 +175,7 @@
 <dimension x1="0" y1="0" x2="0" y2="7.62" x3="-2.54" y3="3.81" textsize="1.778" layer="47" unit="inch"/>
 <text x="2.032" y="3.81" size="0.8128" layer="22" font="vector" ratio="15" rot="MR270" align="center">Qwiic
 Adapter</text>
+<text x="11.43" y="13.97" size="1.778" layer="47" align="center">Measurements in Inches</text>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
