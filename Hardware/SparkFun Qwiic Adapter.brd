@@ -156,10 +156,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="0" y2="7.62" width="0.3048" layer="20"/>
-<wire x1="0" y1="7.62" x2="22.86" y2="7.62" width="0.3048" layer="20"/>
-<wire x1="22.86" y1="7.62" x2="22.86" y2="0" width="0.3048" layer="20"/>
-<wire x1="22.86" y1="0" x2="0" y2="0" width="0.3048" layer="20"/>
+<wire x1="0" y1="0" x2="0" y2="7.62" width="0.2032" layer="20"/>
+<wire x1="0" y1="7.62" x2="22.86" y2="7.62" width="0.2032" layer="20"/>
+<wire x1="22.86" y1="7.62" x2="22.86" y2="0" width="0.2032" layer="20"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.2032" layer="20"/>
 <text x="7.62" y="3.81" size="1.016" layer="21" font="vector" ratio="15" rot="R270" align="center-left">SCL</text>
 <text x="10.16" y="3.81" size="1.016" layer="21" font="vector" ratio="15" rot="R270" align="center-left">SDA</text>
 <text x="12.7" y="3.81" size="1.016" layer="21" font="vector" ratio="15" rot="R270" align="center-left">3.3V</text>
@@ -173,6 +173,8 @@
 <text x="13.97" y="-11.43" size="1.778" layer="51" font="vector">Andy England</text>
 <dimension x1="0" y1="7.62" x2="22.86" y2="7.62" x3="11.43" y3="10.16" textsize="1.778" layer="47" unit="inch"/>
 <dimension x1="0" y1="0" x2="0" y2="7.62" x3="-2.54" y3="3.81" textsize="1.778" layer="47" unit="inch"/>
+<text x="2.032" y="3.81" size="0.8128" layer="22" font="vector" ratio="15" rot="MR270" align="center">Qwiic
+Adapter</text>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
@@ -630,7 +632,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <elements>
 <element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="-16.51" y="-8.89"/>
 <element name="LOGO4" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="20.32" y="3.81" rot="MR0"/>
-<element name="U$1" library="SparkFun-Aesthetics" package="SFE_LOGO_FLAME_.1" value="SFE_LOGO_FLAME.1_INCH" x="4.445" y="2.54" rot="MR0"/>
+<element name="U$1" library="SparkFun-Aesthetics" package="SFE_LOGO_FLAME_.1" value="SFE_LOGO_FLAME.1_INCH" x="2.794" y="2.794" rot="MR90"/>
 <element name="J3" library="SparkFun-Connectors" package="1X04_1MM_RA" value="" x="17.78" y="3.81" rot="R90">
 <attribute name="PROD_ID" value="CONN-13694" x="17.78" y="3.81" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" value="" x="17.78" y="3.81" size="1.778" layer="27" rot="R90" display="off"/>
@@ -642,8 +644,8 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 </element>
 <element name="FD1" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="8.89" y="2.54"/>
 <element name="FD2" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="8.89" y="2.54" rot="MR0"/>
-<element name="FD3" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="13.97" y="3.81"/>
-<element name="FD4" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="13.97" y="3.81" rot="MR0"/>
+<element name="FD3" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="13.97" y="3.175"/>
+<element name="FD4" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="13.97" y="3.175" rot="MR0"/>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="REVISION" value="REVISION" x="-5.08" y="-11.43"/>
 </elements>
 <signals>
@@ -816,4 +818,10 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 </errors>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
